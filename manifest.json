@@ -1,0 +1,25 @@
+{
+  "name": "Copa del Comedor",
+  "short_name": "Copa Comedor",
+  "description": "Aplicación de puntuación y seguimiento de la Copa del Comedor",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#061329",
+  "theme_color": "#0b1231",
+  "icons": [
+    {
+      "src": "./copa_comedor_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./copa_comedor_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
