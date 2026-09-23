@@ -1,15 +1,11 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
   <meta charset="UTF-8">
 
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
-
-  <!-- iPhone / iPad -->
 
   <meta name="apple-mobile-web-app-capable"
         content="yes">
@@ -19,8 +15,6 @@
 
   <meta name="apple-mobile-web-app-title"
         content="Copa Comedor">
-
-  <!-- ICONO DE LA APP -->
 
   <link
     rel="apple-touch-icon"
@@ -37,15 +31,20 @@
       padding: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden;
       background: #061329;
     }
 
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .cargando {
+      text-align: center;
+      font-size: 18px;
     }
 
   </style>
@@ -54,13 +53,18 @@
 
 <body>
 
-  <iframe
-    src="https://script.google.com/macros/s/AKfycbxy8J1QvL6SCnhYR_dUOZQE9Y6_17SFuYqiSYjWXi3rWGLmAi69xf8o0kf0bsRLzsY/exec"
-    allow="fullscreen">
-  </iframe>
+  <div class="cargando">
+    Abriendo Copa del Comedor...
+  </div>
+
+  <script>
+
+    window.location.replace(
+      "https://script.google.com/macros/s/AKfycbxy8J1QvL6SCnhYR_dUOZQE9Y6_17SFuYqiSYjWXi3rWGLmAi69xf8o0kf0bsRLzsY/exec"
+    );
+
+  </script>
 
 </body>
-
 </html>
 ```
-
